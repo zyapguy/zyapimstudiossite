@@ -247,13 +247,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#console" class="md-nav__link">
-    Console
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#player-values" class="md-nav__link">
     Player Values
   </a>
@@ -261,7 +254,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#console_1" class="md-nav__link">
+  <a href="#console" class="md-nav__link">
     Console
   </a>
   
@@ -416,13 +409,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#console" class="md-nav__link">
-    Console
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#player-values" class="md-nav__link">
     Player Values
   </a>
@@ -430,7 +416,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#console_1" class="md-nav__link">
+  <a href="#console" class="md-nav__link">
     Console
   </a>
   
@@ -656,12 +642,6 @@ This is for easy control of game managers directly, and for adding new things fa
 </ul>
 </li>
 </ul>
-<h2 id="console">Console</h2>
-<p>To use the console, you must get the object with the Console tag</p>
-<pre><code class="c#">Console con = GameObject.FindGameObjectWithTag(&quot;Console&quot;).GetComponent&lt;Console&gt;();
-</code></pre>
-
-<p>It controls the console. It has 3 main functions</p>
 <h2 id="player-values">Player Values</h2>
 <p>To Change the player's values, you first have to disable stamina as it controls the players speed values.</p>
 <p>To do that, you can:</p>
@@ -683,7 +663,12 @@ fps.m_RunSpeed = 456f;
 fps.m_JumpSpeed = 789f;
 </code></pre>
 
-<h2 id="console_1">Console</h2>
+<h2 id="console">Console</h2>
+<p>To use the console, you must get the object with the Console tag</p>
+<pre><code class="c#">Console con = GameObject.FindGameObjectWithTag(&quot;Console&quot;).GetComponent&lt;Console&gt;();
+</code></pre>
+
+<p>It controls the console. It has 3 main functions</p>
 <h3 id="checkcommand">CheckCommand()</h3>
 <p>This function process the text in the input field of the console.</p>
 <p>It does not modify anything</p>

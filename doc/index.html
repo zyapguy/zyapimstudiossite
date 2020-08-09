@@ -442,7 +442,7 @@ This is for easy control of game managers directly, and for adding new things fa
 <p>When done, the start function should look like</p>
 <pre><code class="c#">void Start()
 {
-    Console con = GameObject.FindGameObjectWithTag(&quot;Console&quot;);
+    Console con = GameObject.FindGameObjectWithTag(&quot;Console&quot;).GetComponent<Console>();
     con.Log(&quot;Hello World&quot;);
 }
 </code></pre>

@@ -432,7 +432,7 @@ This is for easy control of game managers directly, and for adding new things fa
 </code></pre>
 
 <p>Let's see if the mod initialises, in the Start() function, let's print a string to console. We have to find the console object. To do that we have to do</p>
-<pre><code class="c#">Console con = GameObject.FindGameObjectWithTag(&quot;Console&quot;);
+<pre><code class="c#">Console con = GameObject.FindGameObjectWithTag(&quot;Console&quot;).GetComponent<Console>();
 </code></pre>
 
 <p>Now we will use the <code>Log()</code> function of the console to print a string to console.</p>
